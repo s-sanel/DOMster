@@ -1,0 +1,16 @@
+body {
+  width: 600px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.red {
+  background: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.border {
+  border: 1px solid blue;
+}
