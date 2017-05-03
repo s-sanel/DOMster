@@ -169,6 +169,11 @@ ul li.checked {
 
 .find-btn {
   cursor: pointer;
+  margin-left: 1px;
+  font-size: 12px;
+  padding: 5px;
+  color: #666;
+  background-color: white;
 }
 
 .red {
