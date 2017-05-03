@@ -3,48 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>DOMster</title>
-    <script type="text/javascript" src="lib/domster.js" charset="utf-8"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./lib/domster.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./lib/todo.js" charset="utf-8"></script>
   </head>
   <body>
+    <div class="main-container">
+      <div class="actions">
+        <button class="action" type="button" name="button" onclick="checkAllTodos()">Check all Todos</button>
+        <button class="action" type="button" name="button" onclick="uncheckAllTodos()">Uncheck all Todos</button>
+        <button class="action" type="button" name="button" onclick="toggleAllTodos()">Toggle all Todos</button>
+        <button class="action" type="button" name="button" onclick="clearTheList()">Clear the list</button>
+        <button class="action" type="button" name="button" onclick="addDeleteToItems()">Add delete Event</button>
+        <button class="action" type="button" name="button" onclick="addClickToItems()">Add Check Event</button>
+      </div>
+      <header class="header">
+        <h1 id="on">DOMster Todo</h1>
+        <div class="add-todo">
+          <input type="text" id="input-todo" class="todo-input" placeholder="Title...">
+          <button onclick="addNewItem()" class="add-btn">Add</buton>
+        </div>
+      </header>
 
-    <h1>Jquery Lite</h1>
+      <section class="main-content">
+        <ul class="todo-list">
+          <li>Hit the gym</li>
+          <li>Pay bills</li>
+          <li>Meet George</li>
+          <li>Buy eggs</li>
+          <li>Read a book</li>
+          <li>Organize ofssssfice</li>
+        </ul>
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-      ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+      </section>
+    </div>
 
-    <a id="link1" href="#">Link1</a> <br>
-    <a href="#">Link2</a> <br>
-    <a href="#">Link3</a> <br>
-
-    <ol id="restaurants">
-     <li>Mandalay (Burmese, Inner Richmond)</li>
-     <li>Lime Tree (Malaysian, Inner Richmond)</li>
-     <li>Taqueria Cancun (Mexican, Powell/Civic Center)</li>
-     <li>Arlequin Cafe (Sandwiches, Hayes Valley)</li>
-     <li>Yamo (Burmese, Mission)</li>
-     <li>Manora's (Thai, SOMA)</li>
-   </ol>
-
-   <div class="list-container">
-     The city also has a number of great places just to visit. What are some of your favorites?
-     <br/><br/>
-     <form>
-       <input type="text" class="favorite-input"/>
-       <input type="submit" class="favorite-submit" value="Add to list"/>
-     </form>
-     <ul id="sf-places">
-       <li>Sutro Baths</li>
-       <li>Tank Hill</li>
-       <li>City Lights Books</li>
-     </ul>
-   </div>
 
   </body>
 </html>

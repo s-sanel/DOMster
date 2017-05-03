@@ -1,8 +1,148 @@
-body {
-  width: 600px;
-  margin: 0 auto;
-  padding: 10px 20px;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	outline: 0;
+	font: inherit;
+	color: inherit;
+	text-align: inherit;
+	text-decoration: inherit;
+	vertical-align: inherit;
+	box-sizing: inherit;
+	background: transparent;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.16;
+}
+ol, ul {
+	list-style: none;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid gray;
+  margin: 40px auto;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  background-color: #5089AC;
+  width: 100%;
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.add-todo {
+  width: 80%;
+  display: flex;
+}
+
+.todo-input {
+  height: 25px;
+  width: 75%;
+  font-size: 14px;
+  padding: 0 5px;
+}
+
+.add-btn {
+  width: 25%;
+  cursor: pointer;
+  margin-left: 1px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+}
+
+.main-content {
+  width: 100%;
+  /*border:  1px solid gray;*/
+}
+
+.todo-list {
+  background-color: whitesmoke;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.actions{
+  box-sizing: border-box;
+  background-color: #5089AC;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.action {
+  height: 30px;
+  padding: 5px;
+}
+
 .red {
   background: red;
 }
