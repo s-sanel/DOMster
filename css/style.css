@@ -41,6 +41,13 @@ h1 {
   margin-bottom: 10px;
 }
 
+h2 {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+
+}
+
 .main-container {
   width: 100%;
   max-width: 600px;
@@ -141,6 +148,27 @@ ul li.checked {
 .action {
   height: 30px;
   padding: 5px;
+}
+
+.tag-photo {
+  padding: 5px;
+}
+
+.photo-gallery {
+  background-color: #5089AC;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.photo-gif {
+  width: 200px;
+  height: 200px;
+}
+
+.find-btn {
+  cursor: pointer;
 }
 
 .red {
