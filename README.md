@@ -175,4 +175,7 @@ $ds.ajax({
 
 ## Example
 
-For an example of a project using the DOMster library, view the Demo [code](https://github.com/).  To run the demo, clone the DOMster library and view the html file locally.
+For an example of a project using the DOMster library, view the Demo [code](https://github.com/).  
+To run the demo, see [live demo][DOMster].
+
+[DOMster]: http://sanel-selmanovic.us/DOMster-demo/
